@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0537)http://webcache.googleusercontent.com/search?ion=1&sourceid=chrome-psyapi2&q=cache%3Ahttp%3A%2F%2Fopenmicros.org%2Findex.php%2Farticles%2F94-ciseco-product-documentation%2Fraspberry-pi%2F283-setting-up-my-raspberry-pi&oq=cache%3Ahttp%3A%2F%2Fopenmicros.org%2Findex.php%2Farticles%2F94-ciseco-product-documentation%2Fraspberry-pi%2F283-setting-up-my-raspberry-pi&ie=UTF-8&aqs=chrome..69i57j69i58.1026j0j4&bav=on.2,or.r_cp.&biw=1745&bih=814&dpr=1.1&ech=1&psi=6qrBV_etGcy3sQHN87moAg.1472309996722.3&ei=6qrBV_etGcy3sQHN87moAg&emsg=NCSR&noj=1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi">--><base href="."><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head><body><div id="google-cache-hdr" dir="ltr"><div>This is Google's cache of <a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi" dir="ltr">http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi</a>. It is a snapshot of the page as it appeared on Aug 25, 2016 11:35:35 GMT. </div><div>The <a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi" dir="ltr">current page</a> could have changed in the meantime. <a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;p=cached&amp;answer=1687222">Learn more</a></div><div></div><div><span style="display:inline-block !important;margin-top:8px !important;margin-right:104px !important;white-space:nowrap !important;"><span style="margin-right:28px !important;"><span style="font-weight:bold !important;">Full version</span></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi&amp;num=1&amp;biw=1745&amp;bih=814&amp;noj=1&amp;strip=1&amp;vwsrc=0">Text-only version</a></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi&amp;num=1&amp;biw=1745&amp;bih=814&amp;noj=1&amp;strip=0&amp;vwsrc=1">View source</a></span></span><span style="display:inline-block !important;margin-top:8px !important;color:#717171 !important;">Tip: To quickly find your search term on this page, press <b>Ctrl+F</b> or <b>⌘-F</b> (Mac) and use the find bar.</span></div></div><div style="position:relative;">
+
+
+
+
+  <!--<base href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi">--><base href=".">
+  
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Setup, headless access, access to serial port">
+  <meta name="rights" content="">
+  <meta name="language" content="en-GB">
+  <meta name="title" content="0: Setting up the Raspberry Pi to work with Ciseco hardware">
+  <meta name="author" content="Rob">
+  <meta name="description" content="Getting started with the Raspberry Pi">
+  <meta name="generator" content="Joomla! 1.6 - Open Source Content Management">
+  <title>0: Setting up the Raspberry Pi to work with Ciseco hardware</title>
+  <script src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/core.js" type="text/javascript"></script>
+  <script src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/mootools-core.js" type="text/javascript"></script>
+  <script src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/caption.js" type="text/javascript"></script>
+  <script src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/mootools-more.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/system.css" type="text/css">
+<link rel="stylesheet" href="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/general.css" type="text/css">
+<link rel="stylesheet" href="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/template.css" type="text/css">
+<link rel="stylesheet" href="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/grey.css" type="text/css">
+<!--[if IE 6]>
+<link rel="stylesheet" href="/templates/a4joomla-thirty-three/css/ie6.css" type="text/css" />
+<script src="/templates/a4joomla-thirty-three/js/suckerfish.js" type="text/javascript"></script>
+<style type="text/css">
+img, div, a, input { behavior: url(/templates/a4joomla-thirty-three/iepngfix.htc) }
+</style>
+<script src="/templates/a4joomla-thirty-three/js/iepngfix_tilebg.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="/templates/a4joomla-thirty-three/css/ie67.css" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/mod_stat.php"></script>
+<style type="text/css">
+ #header {
+    height: 80px;
+ }
+ #allwrap {
+    margin-top:0px;
+ }
+ #logo {
+    width:440px;
+    height:80px;
+ }
+ #logo h2 {
+    font-size:52px;
+	margin-top:0px;
+ }
+ #logo h3 {
+	margin-top:-10px;
+ }
+ #banner {
+    height: 80px;
+ }
+ #banner div.moduletable {
+	margin-top:10px;
+ }
+ #headerright {
+    width:530px;
+    height:80px;
+	       background: none;   
+     } 
+ #search {
+   width:170px;
+   height:32px;
+ }
+ 
+</style>
+<!-- <script src="/templates/a4joomla-thirty-three/js/equalize.js" type="text/javascript"></script> -->
+
+
+
+
+
+<div id="allwrap" class="gainlayout" style="width:1030px;">
+
+<div id="headerwrap" class="gainlayout">
+  <div id="header" class="gainlayout">   
+      <div id="logo" class="gainlayout">
+         		    <a href="http://openmicros.org/"><img src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/openmicroslogo.png" border="0" alt=""></a>
+          
+      </div>
+	  <div id="headerright" class="gainlayout">
+                <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+  </div>	  
+  <div class="clr"></div>
+</div>
+
+<div id="topmenuwrap" class="gainlayout">
+           <div id="topmenu" class="gainlayout">
+           		<div class="moduletable">
+					<h3>Top</h3>
+					
+<ul class="menusfh">
+<li id="item-464"><a href="http://openmicros.org/">Home</a></li><li id="item-540"><a href="http://openmicros.org/index.php/documentation">documentation</a></li><li id="item-486"><a href="http://openmicros.org/index.php/component/kunena/?Itemid=0">FORUM</a></li><li id="item-484" class="current active"><a href="http://openmicros.org/index.php/articles">Articles by list</a></li><li id="item-490"><a href="http://openmicros.org/index.php/search">forum search</a></li><li id="item-541"><a href="http://wirelessthings.net/" target="_blank">WirelessThings Shop</a></li></ul>		</div>
+	
+           <div class="clr"></div>
+         </div> 
+            <div id="search" class="gainlayout">
+          		<div class="moduletable">
+					<h3>Search</h3>
+					<form action="http://openmicros.org/index.php/articles" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" type="text" size="20" value="Search..." onblur="if (this.value==&#39;&#39;) this.value=&#39;Search...&#39;;" onfocus="if (this.value==&#39;Search...&#39;) this.value=&#39;&#39;;" data-cip-id="mod-search-searchword">	<input type="hidden" name="task" value="search">
+	<input type="hidden" name="option" value="com_search">
+	<input type="hidden" name="Itemid" value="484">
+	</div>
+</form>
+		</div>
+	 
+		<div class="clr"></div>  
+        </div>
+    <div class="clr"></div>
+</div> 
+
+<div id="wrap" class="gainlayout">
+
+  	  <div id="pathway" class="gainlayout">
+        
+<div class="breadcrumbs">
+<span class="showHere">You are here: </span><a href="http://openmicros.org/" class="pathway">Home</a> <img src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/arrow.png" alt=""> <a href="http://openmicros.org/index.php/articles" class="pathway">Articles by list</a> <img src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/arrow.png" alt=""> <a href="http://openmicros.org/index.php/articles/88-ciseco-product-documentation" class="pathway">Ciseco product documentation</a> <img src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/arrow.png" alt=""> <a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi" class="pathway">Raspberry Pi</a> <img src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/arrow.png" alt=""> <span>0: Setting up the Raspberry Pi to work with Ciseco hardware</span></div>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_philosophy_education_paper.html">write my philosophy education paper</a></p>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_philosophy_paper.html">write my philosophy paper</a></p>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_psychology_paper.html">write my psychology paper</a></p>
+
+      <div class="clr"></div>
+	  </div>
+   
+    <div id="cbody" class="gainlayout">
+    <div id="content60" style="width:988px;">    
+
+	    
+      <div id="content" class="gainlayout">
+	  
+      <div class="item-page">
+		<h2>
+								<a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi">
+						0: Setting up the Raspberry Pi to work with Ciseco hardware</a>
+						</h2>
+
+
+		<ul class="actions">
+		<li class="print-icon"><a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi?tmpl=component&amp;format=pdf" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" title="PDF" rel="nofollow"><img src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/pdf_button.png" alt="PDF"></a></li>										<li class="print-icon">
+						<a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi?tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" rel="nofollow"><img src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/printButton.png" alt="Print"></a>				</li>
+				
+								<li class="email-icon">
+						<a href="http://openmicros.org/index.php/component/mailto/?tmpl=component&amp;template=a4joomla-thirty-three&amp;link=e263f8b84c2bc4ce30c60f0aa3587065249955d4" title="Email" onclick="window.open(this.href,&#39;win2&#39;,&#39;width=400,height=350,menubar=yes,resizable=yes&#39;); return false;"><img src="./0_ Setting up the Raspberry Pi to work with Ciseco hardware_files/emailButton.png" alt="Email"></a>				</li>
+												</ul>
+
+	
+	
+
+ <dl class="article-info">
+ <dt class="article-info-term">Details</dt>
+		<dd class="category-name">
+										Category: <a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi">Raspberry Pi</a>						</dd>
+		<dd class="modified">
+		Last Updated on Monday, 13 June 2016 15:39		</dd>
+	
+ </dl>
+
+	
+	<p>&nbsp;</p><h1>Setting up the Raspberry Pi to work with Ciseco hardwaRe</h1><p><em>Please note: &nbsp;<span style="font-size: 11.818181991577148px; line-height: 1.5;">If you have purchased Ciseco's&nbsp;</span><a href="https://www.wirelessthings.net/4gb-wheezy-raspberry-pi-sd-card-configured-for-ciseco-products" style="font-size: 11.818181991577148px; line-height: 1.5;">4G Raspberry Wheezy SD Card, configured for Ciseco products</a><span style="font-size: 11.818181991577148px; line-height: 1.5;">, or used the Ciseco Wheezy image to create an SD card yourself, then all the steps in this document, except remote access (SSH) set up, which is optional anyway, have been done for you.&nbsp;</span></em></p><p>In this document we will show you how to:</p><ol><li>Configure&nbsp;<a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi#Access to the serial port">access to the Raspberry Pi serial port</a>. Ciseco hardware (e.g.&nbsp;<a href="https://www.wirelessthings.net/slice-of-pi-add-on-for-raspberry-pi?___SID=U">Slice of Pi</a> and <a href="https://www.wirelessthings.net/slice-of-radio-wireless-rf-transciever-for-the-raspberry-pi">Slice of Radio</a>) all communicate with programs on the Raspberry Pi via the serial port. Since the Raspberry Pi ships with exclusive access to this port, we need to do some reconfiguration. You <strong>need </strong>to carry out this task for Ciseco hardware to work properly.</li><li><a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi#Installing Minicom">Install minicom</a>, a terminal emulator that allows you to type characters on the serial port and receive characters from the serial port. You <strong>should </strong>carry out this task if you <strong>don't </strong>already have a program that allows you to easily access the serial port.</li><li><a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/283-setting-up-my-raspberry-pi#Setting up for remote access (SSH)">Set up the Raspberry Pi for remote access (SSH)</a>, useful if you use your Raspberry Pi as a stand-alone controller, without screen, keyboard and mouse. You <strong>do not need</strong> to carry out this task for Ciseco hardware to work properly.</li></ol><p>None of the tasks are hard, but you must be careful to follow the instructions exactly. Take your time. Getting it wrong takes a lot longer to correct than taking time and doing it right first time. W<span style="font-size: 12px; line-height: 1.5;">e recommend you make a full backup of your Raspberry Pi image before making the changes suggested in this guide. Alternatively (or even better for a predictable outcome) use a new copy of the Raspberry Pi operating system.</span></p><p><span style="font-size: 12px; line-height: 1.5;">We assume you have a standard Raspberry Pi with e.g. Wheezy and this has been set up correctly, following the&nbsp;</span><a href="http://www.raspberrypi.org/wp-content/uploads/2012/12/quick-start-guide-v1.1.pdf" style="font-size: 12px; line-height: 1.5; text-decoration: underline; text-align: justify; color: rgb(187, 0, 0);" target="_blank">Basic Setup Instructions</a><span style="font-size: 12px; line-height: 1.5;">in the Raspberry Pi user guide if you are unsure.</span></p><p>If you have purchased Ciseco's <a href="https://www.wirelessthings.net/4gb-wheezy-raspberry-pi-sd-card-configured-for-ciseco-products">4G Raspberry Wheezy SD Card, configured for Ciseco products</a>, or use the <a href="http://openmicros.org/Download/2015-05-05-raspbain-wheezy-raswik-shrunk.img.zip">Ciseco Wheezy image</a> to create an SD card yourself, then all the steps in this document, except the optional remote access (SSH) set up have been done for you.&nbsp;</p><p>&nbsp;</p><h2><a name="Access to the serial port"></a>Access to the serial port</h2><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><span style="font-size: 12px; line-height: 1.5;">By default the Raspberry Pi’s serial port is configured to be used for console input/output. Whilst this is useful if you want to login using the serial port, it means you can't use the Serial Port in your programs. Ciseco hardware,&nbsp;</span><span style="font-size: 12px; line-height: 1.5;">such as Slice of Pi, Slice of Radio and Pi-Lite</span><span style="font-size: 12px; line-height: 1.5;">&nbsp;are connected to this serial port, so&nbsp;</span><span style="font-size: 12px; line-height: 1.5;">we need to set the Raspberry Pi up such that it gives up its exclusive access to the serial port.</span></p><div><span style="font-size: 12px; line-height: 1.5; color: rgb(68, 68, 85); text-align: justify;">Needless to say, if you need some other way to login to the Raspberry Pi, we suggest doing this over the network using an&nbsp;SSH connection (see later).</span></div><div>&nbsp;</div><div>&nbsp;</div><div>OLD INSTRUCTIONS now out of date,&nbsp;<span style="font-size: 12px;">use raspi-config to disable the serial console log in</span></div><div>&nbsp;</div><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><strong style="font-size: 12px; line-height: 1.5;"><u style="font-size: 12px;">A) - Disable Serial Port Login</u></strong></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike>To enable the serial port for your own use you need to disable login on the port. There are two files that need to be edited</strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike>The first and main one is&nbsp;&nbsp;<strong style="font-size: 12px;">/etc/inittab</strong></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><span style="font-size: 12px; line-height: 1.5;">To access this, open</span><u style="font-size: 12px; line-height: 1.5;">&nbsp;<strong style="font-size: 12px;">LXTerminal</strong>&nbsp;</u><span style="font-size: 12px; line-height: 1.5;">from your pi desktop, log into your pi as before and once</span><span style="font-size: 12px; line-height: 1.5; color: rgb(0, 255, 255);">&nbsp;</span><span style="font-size: 12px; line-height: 1.5; color: rgb(0, 128, 0);">Pi@respberrypi ~ $</span><span style="font-size: 12px; line-height: 1.5;">&nbsp;shows, type:</span></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><span style="font-size: 12px; color: rgb(0, 0, 255); line-height: 1.5;">&nbsp;</span><strong style="font-size: 12px; color: rgb(0, 0, 255); line-height: 1.5;"><span style="font-size: 14px;"><span style="font-size: 14px; font-family: &#39;courier new&#39;, courier, monospace;"><strong style="font-size: 12px;">sudo leafpad /etc/inittab</strong></span></span></strong><span style="font-size: 12px; color: rgb(0, 0, 255); line-height: 1.5;">&nbsp;</span></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><span style="font-size: 12px; line-height: 1.5;">This will open inittab with admin privileges and allow you to edit it.</span></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike>This file has the command to enable the login prompt and needs to be disabled. At&nbsp;<span style="font-size: 12px; line-height: 1.5;">the end of the file. You will see a line similar to;</span></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><span style="font-size: 12px; color: rgb(255, 0, 0); line-height: 1.5;">T0:23:respawn:/sbin/getty -L ttyAMA0 115200 vt100</span></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><span style="font-size: 12px; line-height: 1.5;">Disable it by adding a # character to the beginning. Save the file.</span></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><strong><span style="color:#008000;"><span style="font-size: 12px;">#T0:23:respawn:/sbin/getty -L ttyAMA0 115200 vt100</span></span></strong></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><strong style="font-size: 12px;"><u style="font-size: 12px;">B) - Disable Bootup Info</u></strong></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike>When the Raspberry Pi boots up, all the bootup information is sent to the serial port. Disabling this bootup information is optional and you may want to leave this enabled as it is sometimes useful to see what is happening at bootup. If you have a device connected (i.e. Arduino) at bootup, it will receive this information over the serial port, so it is up to you to decide whether this is a problem or not.</strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><span style="font-size: 12px; line-height: 1.5;">You can disable it by editing the file&nbsp;</span><strong style="font-size: 12px; line-height: 1.5;">/boot/cmdline.txt</strong></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><strong style="font-size: 12px; line-height: 1.5;">To find this,&nbsp;</strong><span style="font-size: 12px; line-height: 1.5;">go back to the terminal screen and enter;</span></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><strong><span style="font-size: 12px; color: rgb(0, 0, 255); line-height: 1.5;">s</span><strong style="font-size: 12px; color: rgb(0, 0, 255); line-height: 1.5;"><span style="font-size: 14px;"><span style="font-size: 14px; font-family: &#39;courier new&#39;, courier, monospace;">udo leafpad /boot/cmdline.txt</span></span></strong></strong></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><span style="font-size: 12px; line-height: 1.5;">The contents of the file looks like this;</span></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike>dwc_otg.lpm_enable=0&nbsp;<span style="font-size: 12px; color: rgb(255, 0, 0);">console=ttyAMA0,115200 kgdboc=ttyAMA0,115200</span>&nbsp;console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline rootwait</strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><span style="font-size: 12px; line-height: 1.5;">You need to remove all references to ttyAMA0 (which is the name of the serial port we need access to).&nbsp;</span><span style="font-size: 12px; line-height: 1.5;">After your edits, the file should now look like this;</span></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><strong style="font-size: 12px;"><span style="font-size: 12px; color: rgb(0, 128, 0);">dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline rootwait</span></strong></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><strong style="font-size: 12px;"><u style="font-size: 12px;">C) - Reboot</u></strong></strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike>In order to enable the changes you have made, you will need to reboot the Raspberry Pi</strike></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strike><strong style="font-size: 12px; line-height: 1.5;"><span style="font-size: 12px; color: rgb(0, 0, 255);"><span style="font-size: 14px;"><span style="font-size: 14px; font-family: &#39;courier new&#39;, courier, monospace;">sudo shutdown -r now</span></span></span></strong></strike></p><div>&nbsp;</div><h2><a name="Installing Minicom"></a>Installing and running Minicom</h2><p>You will need this program to run a linux terminal through which you can send and receive text and commands via the serial port.</p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);">In LXTerminal, type:</p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><strong style="font-size: 12px;"><span style="font-size: 12px; color: rgb(0, 0, 255);"><span style="font-size: 14px;"><span style="font-size: 14px; font-family: &#39;courier new&#39;, courier, monospace;">sudo apt-get install minicom</span></span></span></strong></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);">Answer yes (Y) to any questions you may get. &nbsp;You should then have minicom installed.</p><p>Once installed, y<span style="font-size: 12px; color: rgb(68, 68, 85); text-align: justify; line-height: 1.5;">ou will need to know the&nbsp;</span><em style="font-size: 12px; color: rgb(68, 68, 85); text-align: justify; line-height: 1.5;">port name</em><span style="font-size: 12px; color: rgb(68, 68, 85); text-align: justify; line-height: 1.5;">&nbsp;of your PC's serial port. On the Raspberry Pi this will be:</span></p><div style="font-size: 12px; color: rgb(68, 68, 85); text-align: justify;"><p style="font-size: 12px;"><span style="font-size: 14px;"><span style="font-size: 14px; font-family: &#39;courier new&#39;, courier, monospace;"><span style="font-size: 14px; color: rgb(0, 0, 255);"><strong style="font-size: 14px;">ls -l /dev/ttyAMA0</strong></span></span></span></p><p style="font-size: 12px;"><span style="font-size: 12px; line-height: 1.5;">Run minicom with the following parameters:</span></p></div><div style="font-size: 12px; color: rgb(68, 68, 85); text-align: justify;"><p style="font-size: 12px;"><span style="font-size: 14px;"><span style="font-size: 14px; font-family: &#39;courier new&#39;, courier, monospace;"><span style="font-size: 14px; color: rgb(0, 0, 255);"><strong style="font-size: 14px;">minicom -b 9600 -o -D /dev/ttyAMA0</strong></span></span></span></p></div><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><span style="font-size: 12px; line-height: 1.5;">In this case the port name is <span style="font-family:courier new,courier,monospace;">/dev/ttyAMA0</span></span></p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><span style="font-size: 12px; line-height: 1.5;">You can exit minicom with Control-A x , when you are finished.</span></p><p><em>Please note that if you use Ciseco radio modules with LLAP, then you won't be able to type in minicom fast enough to ensure your messages are sent in a single packet. You can still use minicom, but we recommend you prepare a text file with the messages you wish to send and then copy/paste them into minicom.</em></p><p>&nbsp;</p><p><span style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 1.2em; font-weight: bold; letter-spacing: 0px; line-height: 1.3;"><a name="Setting up for remote access (SSH)"></a>Setting up for remote access (SSH)</span></p><p><span style="font-size: 12px;">Setting up for SSH is useful if you use Raspberry Pies as controllers, without screen, keyboard and mouse. You&nbsp;</span><strong style="font-size: 12px;">do not need</strong><span style="font-size: 12px;">&nbsp;to carry out this task for Ciseco hardware to work, so you can skip this step.</span></p><p><span style="font-size: 12px; line-height: 1.5;">The notes here are heavilly based on those found here: </span><a href="http://elinux.org/RPi_Advanced_Setup#Serial_connection" style="font-size: 12px; line-height: 1.5;">http://elinux.org/RPi_Advanced_Setup#Serial_connection</a></p><p><strong><u><span style="font-size: 12px; line-height: 1.5;">A) - Add the pi user to the dialout group</span></u></strong></p><p><span style="font-size: 12px; line-height: 1.5;">In LXTerminal, type:</span></p><p><strong><span style="color:#0000ff;">sudo usermod -a -G dialout pi</span></strong></p><div><span style="font-size: 12px; line-height: 1.5;">Before setting up for remote access, you may want to change the default password for your Pi, especially if it starts appearing on networks that you don't fully control, such as at work, or the internet at large.</span></div><p><u><strong>B) - Enable SSH</strong></u></p><p>Enabling basic remote access is simple: just enable SSH. When you first switch on the Pi you can do it at the very first configuration screen. If you have not done it there, you can do it by the following command:</p><p><span style="color:#0000ff;"><strong>sudo mv /boot/boot_enable_ssh.rc /boot/boot.rc</strong></span></p><p>Reboot your Pi and towards the bottom of the status messages you should see a line like:</p><p><span style="font-family:courier new,courier,monospace;">Starting OpenBSD Secure Shell server: sshd</span></p><p>When you see that, you know that SSH is enabled. You should then be able to SSH to your Pi, using its IP address, e.g.:</p><p><strong><span style="color:#0000ff;">ssh 192.168.1.224</span></strong></p><p>Of course you need to use the IP address of your Pi, which will most likely be different from the one above. To find the IP address of your Pi, log into it and then type:</p><p><strong><span style="color:#0000ff;">ip addr</span></strong></p><p>If using the IP address works for you, <strong>stop here</strong>. &nbsp;You are done!</p><p><u><strong>C) - Setting up Avahi</strong></u></p><p>Most networks use DHCP, so the IP address of your Raspberry Pi will not be fixed. I do like to address my Raspberry Pi regardless of its actual IP address. And I like the solution to be robust. Here is one that works, even it is a bit elaborate to set up. It is based around zeroconf and requires the installation and configuration of a package called <span style="font-family:courier new,courier,monospace;">avahi</span>.</p><p>First, install avahi with the following commands on the Pi:</p><p><strong><span style="color:#0000ff;">sudo apt-get install avahi-daemon</span></strong></p><p>and then initialise the daemon with:</p><p><span style="color:#0000ff;"><strong>sudo insserv avahi-daemon</strong></span></p><p>Next you need to create a configfile for Avahi at <span style="color:#008000;"><strong><span style="font-family: &#39;courier new&#39;, courier, monospace;">/etc/avahi/services/multiple.service</span></strong></span></p><p>The contents of this file should look like the following, courtesy of aXon on the Rasperry Pi forums:</p><p><span style="color:#008000;"><strong>&lt;?xml version="1.0" standalone='no'?&gt;</strong></span></p><p><span style="color:#008000;"><strong>&lt;!DOCTYPE service-group SYSTEM "avahi-service.dtd"&gt;</strong></span></p><p><span style="color:#008000;"><strong>&lt;service-group&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;name replace-wildcards="yes"&gt;%h&lt;/name&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;service&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;type&gt;_device-info._tcp&lt;/type&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;port&gt;0&lt;/port&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;txt-record&gt;model=RackMac&lt;/txt-record&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/service&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;service&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;type&gt;_ssh._tcp&lt;/type&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;port&gt;22&lt;/port&gt;</strong></span></p><p><span style="color:#008000;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/service&gt;</strong></span></p><p><span style="color:#008000;"><strong>&lt;/service-group&gt;</strong></span></p><p>Apply the new configuration by restarting the avahi daemon, with:</p><p><strong><span style="color:#0000ff;">sudo /etc/init.d/avahi-daemon restart</span></strong></p><p>The Pi should now be addressable from other machines as raspberrypi.local, for example:</p><p><span style="color:#0000ff;"><strong>ssh pi@raspberrypi.local</strong></span></p><p>Since Avahi negotiates with your router, it may take a little while before your machine becomes recognised and visible on the network, so don't dispair if you do not see your Raspberry Pi straight away. Just retry every few minutes.</p><h2>&nbsp;</h2><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);">&nbsp;</p><p style="font-size: 12px; text-align: justify; color: rgb(68, 68, 85);"><span style="font-size: 10px;">User Guide Uses Information obtained from&nbsp;hobbytronics.co.uk and elinux.org</span></p><div>&nbsp;</div> 
+				<ul class="pagenav">
+					<li class="pagenav-next">
+						<a href="http://openmicros.org/index.php/articles/94-ciseco-product-documentation/raspberry-pi/217-getting-started-with-raspberry-pi-gpio-and-python" rel="prev">Next &gt;</a>
+					</li>
+				</ul>
+	</div> 
+      </div> 
+          
+  </div>
+      <div class="clr"></div>
+  </div>
+   
+  
+<!--end of wrap-->
+</div>
+    
+<!--end of allwrap-->
+</div>
+<div id="footerwrap" class="gainlayout" style="width:1030px;"> 
+  <div id="footer" class="gainlayout">  
+         </div>
+   
+</div>
+
+
+
+</div></body></html>

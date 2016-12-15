@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0584)http://webcache.googleusercontent.com/search?ion=1&sourceid=chrome-psyapi2&q=cache%3Ahttp%3A%2F%2Fopenmicros.org%2Findex.php%2Farticles%2F88-ciseco-product-documentation%2F125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20&oq=cache%3Ahttp%3A%2F%2Fopenmicros.org%2Findex.php%2Farticles%2F88-ciseco-product-documentation%2F125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20&ie=UTF-8&aqs=chrome..69i57j69i58.909j0j4&bav=on.2,or.r_cp.&biw=1745&bih=814&dpr=1.1&ech=1&psi=lK7BV_OpH8e6swGJhYiABQ.1472310934903.3&ei=lK7BV_OpH8e6swGJhYiABQ&emsg=NCSR&noj=1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://openmicros.org/index.php/articles/88-ciseco-product-documentation/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20">--><base href="."><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head><body><div id="google-cache-hdr" dir="ltr"><div>This is Google's cache of <a href="http://openmicros.org/index.php/articles/88-ciseco-product-documentation/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20" dir="ltr">http://openmicros.org/index.php/articles/88-ciseco-product-documentation/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20</a>. It is a snapshot of the page as it appeared on Jul 25, 2016 08:36:31 GMT. </div><div>The <a href="http://openmicros.org/index.php/articles/88-ciseco-product-documentation/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20" dir="ltr">current page</a> could have changed in the meantime. <a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;p=cached&amp;answer=1687222">Learn more</a></div><div></div><div><span style="display:inline-block !important;margin-top:8px !important;margin-right:104px !important;white-space:nowrap !important;"><span style="margin-right:28px !important;"><span style="font-weight:bold !important;">Full version</span></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://openmicros.org/index.php/articles/88-ciseco-product-documentation/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20&amp;num=1&amp;biw=1745&amp;bih=814&amp;noj=1&amp;strip=1&amp;vwsrc=0">Text-only version</a></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://openmicros.org/index.php/articles/88-ciseco-product-documentation/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20&amp;num=1&amp;biw=1745&amp;bih=814&amp;noj=1&amp;strip=0&amp;vwsrc=1">View source</a></span></span><span style="display:inline-block !important;margin-top:8px !important;color:#717171 !important;">Tip: To quickly find your search term on this page, press <b>Ctrl+F</b> or <b>⌘-F</b> (Mac) and use the find bar.</span></div></div><div style="position:relative;">
+
+
+
+
+  <!--<base href="http://openmicros.org/index.php/articles/88-ciseco-product-documentation/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20">--><base href=".">
+  
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="">
+  <meta name="rights" content="">
+  <meta name="language" content="en-GB">
+  <meta name="title" content="Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20">
+  <meta name="author" content="Spencer Owen">
+  <meta name="generator" content="Joomla! 1.6 - Open Source Content Management">
+  <title>Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20</title>
+  <script src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/core.js" type="text/javascript"></script>
+  <script src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/mootools-core.js" type="text/javascript"></script>
+  <script src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/caption.js" type="text/javascript"></script>
+  <script src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/mootools-more.js" type="text/javascript"></script>
+  <link type="text/css" rel="stylesheet" href="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/shCore.css">
+<link type="text/css" rel="stylesheet" href="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/shThemeDefault.css">
+<script type="text/javascript" src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/shCore.js"></script>
+  <script type="text/javascript" src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/shBrushPlain.js"></script>
+
+<link rel="stylesheet" href="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/system.css" type="text/css">
+<link rel="stylesheet" href="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/general.css" type="text/css">
+<link rel="stylesheet" href="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/template.css" type="text/css">
+<link rel="stylesheet" href="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/grey.css" type="text/css">
+<!--[if IE 6]>
+<link rel="stylesheet" href="/templates/a4joomla-thirty-three/css/ie6.css" type="text/css" />
+<script src="/templates/a4joomla-thirty-three/js/suckerfish.js" type="text/javascript"></script>
+<style type="text/css">
+img, div, a, input { behavior: url(/templates/a4joomla-thirty-three/iepngfix.htc) }
+</style>
+<script src="/templates/a4joomla-thirty-three/js/iepngfix_tilebg.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="/templates/a4joomla-thirty-three/css/ie67.css" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/mod_stat.php"></script>
+<style type="text/css">
+ #header {
+    height: 80px;
+ }
+ #allwrap {
+    margin-top:0px;
+ }
+ #logo {
+    width:440px;
+    height:80px;
+ }
+ #logo h2 {
+    font-size:52px;
+	margin-top:0px;
+ }
+ #logo h3 {
+	margin-top:-10px;
+ }
+ #banner {
+    height: 80px;
+ }
+ #banner div.moduletable {
+	margin-top:10px;
+ }
+ #headerright {
+    width:530px;
+    height:80px;
+	       background: none;   
+     } 
+ #search {
+   width:170px;
+   height:32px;
+ }
+ 
+</style>
+<!-- <script src="/templates/a4joomla-thirty-three/js/equalize.js" type="text/javascript"></script> -->
+
+
+
+
+
+<div id="allwrap" class="gainlayout" style="width:1030px;">
+
+<div id="headerwrap" class="gainlayout">
+  <div id="header" class="gainlayout">   
+      <div id="logo" class="gainlayout">
+         		    <a href="http://openmicros.org/"><img src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/openmicroslogo.png" border="0" alt=""></a>
+          
+      </div>
+	  <div id="headerright" class="gainlayout">
+                <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+  </div>	  
+  <div class="clr"></div>
+</div>
+
+<div id="topmenuwrap" class="gainlayout">
+           <div id="topmenu" class="gainlayout">
+           		<div class="moduletable">
+					<h3>Top</h3>
+					
+<ul class="menusfh">
+<li id="item-464"><a href="http://openmicros.org/">Home</a></li><li id="item-540"><a href="http://openmicros.org/index.php/documentation">documentation</a></li><li id="item-486"><a href="http://openmicros.org/index.php/component/kunena/?Itemid=0">FORUM</a></li><li id="item-484" class="current active"><a href="http://openmicros.org/index.php/articles">Articles by list</a></li><li id="item-490"><a href="http://openmicros.org/index.php/search">forum search</a></li><li id="item-541"><a href="http://wirelessthings.net/" target="_blank">WirelessThings Shop</a></li></ul>		</div>
+	
+           <div class="clr"></div>
+         </div> 
+            <div id="search" class="gainlayout">
+          		<div class="moduletable">
+					<h3>Search</h3>
+					<form action="http://openmicros.org/index.php/articles" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" type="text" size="20" value="Search..." onblur="if (this.value==&#39;&#39;) this.value=&#39;Search...&#39;;" onfocus="if (this.value==&#39;Search...&#39;) this.value=&#39;&#39;;" data-cip-id="mod-search-searchword">	<input type="hidden" name="task" value="search">
+	<input type="hidden" name="option" value="com_search">
+	<input type="hidden" name="Itemid" value="484">
+	</div>
+</form>
+		</div>
+	 
+		<div class="clr"></div>  
+        </div>
+    <div class="clr"></div>
+</div> 
+
+<div id="wrap" class="gainlayout">
+
+  	  <div id="pathway" class="gainlayout">
+        
+<div class="breadcrumbs">
+<span class="showHere">You are here: </span><a href="http://openmicros.org/" class="pathway">Home</a> <img src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/arrow.png" alt=""> <a href="http://openmicros.org/index.php/articles" class="pathway">Articles by list</a> <img src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/arrow.png" alt=""> <a href="http://openmicros.org/index.php/articles/78-microcontroller-projects" class="pathway">Microcontroller projects</a> <img src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/arrow.png" alt=""> <span>Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20</span></div>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_philosophy_education_paper.html">write my philosophy education paper</a></p>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_philosophy_paper.html">write my philosophy paper</a></p>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_psychology_paper.html">write my psychology paper</a></p>
+
+      <div class="clr"></div>
+	  </div>
+   
+    <div id="cbody" class="gainlayout">
+    <div id="content60" style="width:988px;">    
+
+	    
+      <div id="content" class="gainlayout">
+	  
+      <div class="item-page">
+		<h2>
+								<a href="http://openmicros.org/index.php/articles/78-microcontroller-projects/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20">
+						Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20</a>
+						</h2>
+
+
+		<ul class="actions">
+		<li class="print-icon"><a href="http://openmicros.org/index.php/articles/78-microcontroller-projects/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20?tmpl=component&amp;format=pdf" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" title="PDF" rel="nofollow"><img src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/pdf_button.png" alt="PDF"></a></li>										<li class="print-icon">
+						<a href="http://openmicros.org/index.php/articles/78-microcontroller-projects/125-live-temperature-logging-on-pachube-with-a-xino-xbbo-xv-a-ds18b20?tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" rel="nofollow"><img src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/printButton.png" alt="Print"></a>				</li>
+				
+								<li class="email-icon">
+						<a href="http://openmicros.org/index.php/component/mailto/?tmpl=component&amp;template=a4joomla-thirty-three&amp;link=f5f9cf7ca9bfc07a83d89a4afb1e00ac2d230f54" title="Email" onclick="window.open(this.href,&#39;win2&#39;,&#39;width=400,height=350,menubar=yes,resizable=yes&#39;); return false;"><img src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/emailButton.png" alt="Email"></a>				</li>
+												</ul>
+
+	
+	
+
+ <dl class="article-info">
+ <dt class="article-info-term">Details</dt>
+		<dd class="category-name">
+										Category: <a href="http://openmicros.org/index.php/articles/78-microcontroller-projects">Microcontroller projects</a>						</dd>
+		<dd class="modified">
+		Last Updated on Wednesday, 15 June 2016 11:30		</dd>
+	
+ </dl>
+
+	
+	<p><img alt="" src="data:image/png;base64,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"></p><p>&nbsp;</p><p>One of first goals for many&nbsp;people wanting to&nbsp;get&nbsp;into the "Internet Of Things" is to be able to log&nbsp;simple data and save it somewhere. This example reads a temperature and publishes it to a website that can&nbsp;save and display your data, it's called Pachube.com. The equipment detailed is connected to the internet&nbsp;using a bog standard WiFi network, like the one's many of us have at home or work.</p><p>Here&nbsp;is a step by step guide to acheiving this for under £40.00&nbsp;</p><p><img alt="" src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/pachube_temp_monitor.jpg" style="width: 400px; height: 228px"></p><p>&nbsp;</p><p>You will need;</p><p>&nbsp;</p><ul><li><a href="https://www.wirelessthings.net/xino-basic-for-atmel-atmega-avr-arduino-compatible-kit">Ciseco Xino Basic for Atmel</a></li><li><a href="https://www.wirelessthings.net/">Atmel 328, crystal &amp; capacitors</a></li><li><a href="https://www.wirelessthings.net/xbbo-break-out-board-for-xbee-shaped-modules-active?___SID=U">Ciseco Active XBBO</a></li><li><a href="https://www.wirelessthings.net/">Roving Networks RV-XV</a></li><li><a href="https://www.wirelessthings.net/">Dallas DS18B20 Temperature Sensor</a></li><li>4.7k Resistor</li><li>Wireless router with permanent internet connection</li><li>Pachube.com account</li></ul><p>&nbsp;</p><p><span style="font-size: 14px"><strong>Step 1 Build your hardware</strong></span></p><p>Both the Xino and XBBO are supplied in kit form. &nbsp;They use through-hole components, making them suitable for anyone with even moderate soldering skills. &nbsp;For instructions on either part, see the following articles;</p><ul><li><a href="http://shop.ciseco.co.uk/roving-network-rn-xv-xbee-shaped-wifi-module-xmas-price/">XB4A - How to build</a></li><li><a href="http://openmicros.org/index.php/articles/88-ciseco-product-documentation/123-xbbo-how-to-build">XBBO - How to build</a></li></ul><p>Next you will need to connect the Dallas DS18B20 temperature sensor. &nbsp;The easiest way is to mount it on the prototyping area at the top of the Xino board as show in Andrew Lindsays&nbsp;<a href="http://openmicros.org/index.php/articles/78-microcontroller-projects/97-xino-basic-for-atmel-example-measuring-temperature">XINO Basic for Atmel example 1 - Measuring Temperature</a>&nbsp;article. &nbsp;You may also want to consider using a length of 3 core wire to the sensor so that it can be mounted remotely from the Xino.</p><ul><li>Pin 1 of the DS18B20 connects to ground</li><li>Pin 2 of the DS18B20 connects to Digital Input 06 on the Xino (Note that the example listed above shows 03, but we will be using 03 as a software serial port for monitoring)</li></ul><div><ul><li>Pin 3 of the DS18B20 connects to 5V</li><li>A 4.7K resistor connects Digital Input 06 and 5V</li></ul><p>&nbsp;</p><p><img alt="" src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/dallasclose2.jpg" style="width: 400px; height: 240px"></p><p>&nbsp;</p><p><span style="font-size: 14px"><strong>Step 2 Set up your Pachube account</strong></span></p><p>If you don't alreayd have a Pachube account you will need to sign up for one. &nbsp;Pachube accounts are free, and you now get unlimited datastreams, datapoints and history. &nbsp;Go to&nbsp;<a href="https://pachube.com/signup">https://pachube.com/signup</a> to sign up, and then click the link in the confirmation email.</p><p>Whilst the master API key you are assigned will allow you to upload data, it is advisable to create an access key with only the PUT permission. &nbsp;To do this, go to the 'My Keys' link, and click the 'create a new API key' link. &nbsp;You will need to give it PUT permissions, but you may also want to restrict what IP addresses can use the key, restrict it to private feeds or set up an expirary date. &nbsp;Once you've created the key, click on 'show key' to reveal a 43 digit key. &nbsp;Copy this to notepad or somewhere, you'll need it later.</p><p>Next, create a feed. &nbsp;Give it a title, description and any other info you wish. &nbsp;Here you can also select if the feed is to be public or private. &nbsp;Add two data streams. &nbsp;One with an ID of 0, which will be the uptime count, and one with an ID of 1 which will be temperature in degrees C. &nbsp;This will now appear in your feeds section. &nbsp;Note that is creates a unique 5 digit feed ID that you will need to copy for use later.</p><p>&nbsp;</p><p><span style="font-size: 14px"><strong>Step 3 Program your Xino</strong></span></p><p>I will make the assumption here that you already have the Arduino IDE installed, and you are reasonably familiar with programming Arduinos. &nbsp;If not, take a look at&nbsp;<a href="http://www.arduino.cc/">http://www.arduino.cc/</a>&nbsp;in particular the Download and the Getting Started section.</p><p>If you haven't got tem already, you will need the following libraries installed;</p><ul><li><a href="http://www.pjrc.com/teensy/td_libs_OneWire.html">OneWire</a></li><li><a href="http://www.milesburton.com/?title=Dallas_Temperature_Control_Library">DallasTemperature</a></li><li><a href="http://arduino.cc/en/Reference/SoftwareSerial">SoftwareSerial</a></li><li><a href="https://github.com/jcrouchley/WiFly-Shield">WiFly</a></li></ul><p>Create a script called Pachube_Temperature_Logger with the following code;</p><p><script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = "http://openmicros.org/plugins/content/CodeCitation/codecitation/scripts/clipboard.swf";
+	SyntaxHighlighter.defaults["auto-links"] = true;
+	SyntaxHighlighter.defaults["collapse"] = false;
+	SyntaxHighlighter.defaults["gutter"] = true;
+	SyntaxHighlighter.defaults["smart-tabs"] = true;
+	SyntaxHighlighter.defaults["tab-size"] = 40;
+	SyntaxHighlighter.defaults["toolbar"] = true;
+	SyntaxHighlighter.defaults["wrap-lines"] = true;	
+	SyntaxHighlighter.all();
+</script></p><div style="overflow: hidden; display: block; height: auto; width: inherit;"><pre class="brush:text;"> 
+// WiFly Pachube Client
+
+// Send data to a Pachube Feed
+
+// (Based on Ethernet's WebClient Example)
+
+// (based upon Sparkfun WiFly Web Client example)
+
+// Sparkfun WiFly library updated and can be found here
+
+// https://github.com/jcrouchley/WiFly-Shield
+
+// Built using Arduino IDE V0.22
+#include "WiFly.h"
+// Wifly RN-XV (XBee shaped) module connected
+
+//  WiFly Tx to pin 0 (Arduino Rx)
+
+//  WiFly Rx to pin 1 (Arduino Tx)
+// using NewSoftSerial V11 beta
+
+// downloaded from here http://arduiniana.org/2011/01/newsoftserial-11-beta/
+
+// this will be included as Software Serial in Arduino IDE 1.0
+
+#include &lt;SoftwareSerial.h&gt;
+SoftwareSerial mySerial(2, 3);
+#include &lt;DallasTemperature.h&gt;
+
+#include &lt;OneWire.h&gt;
+
+OneWire oneWire(6);  //DS18B20 connected to pin 6
+
+DallasTemperature sensors(&amp;oneWire);
+// Edit credentials.h to provide your own credentials
+
+#include "Credentials.h"
+// Using Pachube API V2
+
+Client client("api.pachube.com", 80);
+void setup() {
+  pinMode(8,OUTPUT);    // power up the XBee socket
+
+  digitalWrite(8,HIGH);
+
+  // lots of time for the WiFly to start up and also in case I need to stop the transmit
+
+  delay(10000);
+  Serial.begin(9600);
+
+  mySerial.begin(9600);
+
+  sensors.begin();         // scan for DS18B20 temperature sensors
+  WiFly.setUart(&amp;Serial); // Tell the WiFly library that we are not using the SPIUart
+
+  mySerial.println("Wifly begin");
+
+  WiFly.begin();    // startup the WiFly
+  mySerial.println("Wifly join");
+  // Join the WiFi network
+
+  if (!WiFly.join(ssid, passphrase, WEP_MODE)) {
+
+    mySerial.println("Association failed.");
+
+    while (1) {
+
+      // Hang on failure.
+
+    }
+
+  } 
+
+}
+uint32_t timeLastUpdated;
+
+int i;
+
+char buff[64];
+void loop() {
+
+  if (millis() - timeLastUpdated &gt; TIMETOUPDATE)
+
+  {  // time for the next update
+
+    timeLastUpdated = millis();
+    // prepare the data to send
+
+    // format (API V2)
+
+    // multiple lines each with &lt;datastreamID&gt;,&lt;datastreamValue&gt;
+
+    // feedID can be the datastream name of the numberic ID
+    sensors.requestTemperatures();           //Get temperature from 18B20
+
+    long tempC = sensors.getTempCByIndex(0); //First 18B20 is index (0)
+
+    sprintf(buff,"0,%d\n1,%d",i++,tempC);
+
+    mySerial.println("connecting...");
+
+    if (client.connect()) {
+
+      mySerial.println("connected");
+
+      client.print("PUT /v2/feeds/");  // APIV2
+
+      client.print(PACHUBEFEED);
+
+      client.println(".csv HTTP/1.1");
+
+      client.println("Host: api.pachube.com");
+
+      client.print("X-PachubeApiKey: ");
+
+      client.println(APIKEY);
+      client.println("User-Agent: Arduino (WiFly RN-XV)");
+
+      client.print("Content-Type: text/csv\nContent-Length: ");
+
+      client.println(strlen(buff));
+
+      client.println("Connection: close");
+
+      client.println();
+      client.print(buff);
+
+      client.println();
+    } else {
+
+      mySerial.println("connection failed");
+
+    }
+    delay(2000);
+
+    while (client.available()) {
+
+      // TODO verify success (HTTP/1.1 200 OK)
+
+      mySerial.print(client.read());  // display the result
+
+    }
+
+    mySerial.println();
+    if (client.connected()) {
+
+      mySerial.println("disconnecting.");
+
+      client.stop();
+
+      mySerial.println("disconnected.");
+
+    }
+
+  }
+
+}
+ 
+</pre></div><p></p><p>Create another script called credentials.h with the following code. &nbsp;You will need to supply your Feed ID and API key (as noted earlier), and your wifi credentials.</p><p>&nbsp;</p><div><p class="brush:cpp">&nbsp;</p><p class="brush:php"></p><div style="overflow: hidden; display: block; height: auto; width: inherit;"><pre class="brush:text;">
+#ifndef __CREDENTIALS_H__
+
+#define __CREDENTIALS_H__
+// supply your own Pachube feed ID
+
+#define PACHUBEFEED "yourFEEDIDwillgohere"
+
+// supply your own API Key
+
+#define APIKEY "yourAPIKEYwillgohere"
+
+#define TIMETOUPDATE 15000  // frequency of update - every 15 seconds
+// Wifi parameters
+
+char passphrase[] = "yourWIFIKEYwillgohere";
+
+char ssid[] = "yourSSIDwillgohere";
+
+boolean mode = WEP_MODE; //or WPA_MODE
+#endif
+
+</pre></div><br>
+<span class="Apple-style-span" style="line-height: 18px; font-family: &#39;palatino linotype&#39;, &#39;book antiqua3&#39;, palatino, serif; white-space: normal; font-size: 12px">Compile Pachube_Temperature_Logger&nbsp;and upload it to the Xino.</span><p></p></div></div><p>&nbsp;</p><p>Unplug the Xino, put the XV in to the XBBO, plug the XBBO in to the Xino and apply power</p><p>&nbsp;</p><p><span style="font-size: 14px"><strong>Step 4 Sit back and relax</strong></span></p><p><img alt="" src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/pachube_temp_monitor2.jpg" style="width: 400px; height: 417px"></p><p>&nbsp;</p><p>Have a look at your feed on Pachube. &nbsp;The view initially defaults to 24 hours, so if you have only just turned it on, you might only see a single dot for the uptime and temperature data streams. &nbsp;Change this to 1 hour to zoom in. &nbsp;You should see stream 0 continually rise from zero. &nbsp;(It will fall back to zero every time the Xino is restarted). &nbsp;Feed 1 should display your temperature. &nbsp;To see that this is working, place it somewhere warm, or somewhere cold, or breath heavily on it and you will see the graph change accordingly.</p><p>&nbsp;</p><p><img alt="" src="./Live Temperature Logging on Pachube with a Xino, XBBO, XV &amp; DS18B20_files/fullscreen capture 24112011 153148.bmp.jpg" style="width: 400px; height: 195px"></p><p>&nbsp;</p><p>&nbsp;</p> 
+				<ul class="pagenav">
+					<li class="pagenav-prev">
+						<a href="http://openmicros.org/index.php/articles/78-microcontroller-projects/284-claire-crouchley" rel="next">&lt; Prev</a>
+					</li>
+					<li class="pagenav-next">
+						<a href="http://openmicros.org/index.php/articles/78-microcontroller-projects/70-picaxe-08m-wireless-aprotocol-sensor" rel="prev">Next &gt;</a>
+					</li>
+				</ul>
+	</div> 
+      </div> 
+          
+  </div>
+      <div class="clr"></div>
+  </div>
+   
+  
+<!--end of wrap-->
+</div>
+    
+<!--end of allwrap-->
+</div>
+<div id="footerwrap" class="gainlayout" style="width:1030px;"> 
+  <div id="footer" class="gainlayout">  
+         </div>
+   
+</div>
+
+
+
+</div></body></html>

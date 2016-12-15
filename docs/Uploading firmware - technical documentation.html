@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0456)http://webcache.googleusercontent.com/search?ion=1&sourceid=chrome-psyapi2&q=cache%3Ahttp%3A%2F%2Fopenmicros.org%2Findex.php%2Farticles%2F84-xrf-basics%2F272-bootloader-protocol&oq=cache%3Ahttp%3A%2F%2Fopenmicros.org%2Findex.php%2Farticles%2F84-xrf-basics%2F272-bootloader-protocol&ie=UTF-8&aqs=chrome..69i57j69i58.937j0j4&bav=on.2,or.r_cp.&biw=1745&bih=814&dpr=1.1&ech=1&psi=PK_BV4qfKIapsgHmvpDYCw.1472311102886.3&ei=PK_BV4qfKIapsgHmvpDYCw&emsg=NCSR&noj=1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol">--><base href="."><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head><body><div id="google-cache-hdr" dir="ltr"><div>This is Google's cache of <a href="http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol" dir="ltr">http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol</a>. It is a snapshot of the page as it appeared on Jun 30, 2016 06:12:02 GMT. </div><div>The <a href="http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol" dir="ltr">current page</a> could have changed in the meantime. <a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;p=cached&amp;answer=1687222">Learn more</a></div><div></div><div><span style="display:inline-block !important;margin-top:8px !important;margin-right:104px !important;white-space:nowrap !important;"><span style="margin-right:28px !important;"><span style="font-weight:bold !important;">Full version</span></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol&amp;num=1&amp;biw=1745&amp;bih=814&amp;noj=1&amp;strip=1&amp;vwsrc=0">Text-only version</a></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol&amp;num=1&amp;biw=1745&amp;bih=814&amp;noj=1&amp;strip=0&amp;vwsrc=1">View source</a></span></span><span style="display:inline-block !important;margin-top:8px !important;color:#717171 !important;">Tip: To quickly find your search term on this page, press <b>Ctrl+F</b> or <b>⌘-F</b> (Mac) and use the find bar.</span></div></div><div style="position:relative;">
+
+
+
+
+  <!--<base href="http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol">--><base href=".">
+  
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="">
+  <meta name="rights" content="">
+  <meta name="language" content="en-GB">
+  <meta name="title" content="Uploading firmware - technical documentation">
+  <meta name="author" content="John Crouchley">
+  <meta name="generator" content="Joomla! 1.6 - Open Source Content Management">
+  <title>Uploading firmware - technical documentation</title>
+  <script src="./Uploading firmware - technical documentation_files/core.js" type="text/javascript"></script>
+  <script src="./Uploading firmware - technical documentation_files/mootools-core.js" type="text/javascript"></script>
+  <script src="./Uploading firmware - technical documentation_files/caption.js" type="text/javascript"></script>
+  <script src="./Uploading firmware - technical documentation_files/mootools-more.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="./Uploading firmware - technical documentation_files/system.css" type="text/css">
+<link rel="stylesheet" href="./Uploading firmware - technical documentation_files/general.css" type="text/css">
+<link rel="stylesheet" href="./Uploading firmware - technical documentation_files/template.css" type="text/css">
+<link rel="stylesheet" href="./Uploading firmware - technical documentation_files/grey.css" type="text/css">
+<!--[if IE 6]>
+<link rel="stylesheet" href="/templates/a4joomla-thirty-three/css/ie6.css" type="text/css" />
+<script src="/templates/a4joomla-thirty-three/js/suckerfish.js" type="text/javascript"></script>
+<style type="text/css">
+img, div, a, input { behavior: url(/templates/a4joomla-thirty-three/iepngfix.htc) }
+</style>
+<script src="/templates/a4joomla-thirty-three/js/iepngfix_tilebg.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="/templates/a4joomla-thirty-three/css/ie67.css" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="./Uploading firmware - technical documentation_files/mod_stat.php"></script>
+<style type="text/css">
+ #header {
+    height: 80px;
+ }
+ #allwrap {
+    margin-top:0px;
+ }
+ #logo {
+    width:440px;
+    height:80px;
+ }
+ #logo h2 {
+    font-size:52px;
+	margin-top:0px;
+ }
+ #logo h3 {
+	margin-top:-10px;
+ }
+ #banner {
+    height: 80px;
+ }
+ #banner div.moduletable {
+	margin-top:10px;
+ }
+ #headerright {
+    width:530px;
+    height:80px;
+	       background: none;   
+     } 
+ #search {
+   width:170px;
+   height:32px;
+ }
+ 
+</style>
+<!-- <script src="/templates/a4joomla-thirty-three/js/equalize.js" type="text/javascript"></script> -->
+
+
+
+
+
+<div id="allwrap" class="gainlayout" style="width:1030px;">
+
+<div id="headerwrap" class="gainlayout">
+  <div id="header" class="gainlayout">   
+      <div id="logo" class="gainlayout">
+         		    <a href="http://openmicros.org/"><img src="./Uploading firmware - technical documentation_files/openmicroslogo.png" border="0" alt=""></a>
+          
+      </div>
+	  <div id="headerright" class="gainlayout">
+                <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+  </div>	  
+  <div class="clr"></div>
+</div>
+
+<div id="topmenuwrap" class="gainlayout">
+           <div id="topmenu" class="gainlayout">
+           		<div class="moduletable">
+					<h3>Top</h3>
+					
+<ul class="menusfh">
+<li id="item-464"><a href="http://openmicros.org/">Home</a></li><li id="item-540"><a href="http://openmicros.org/index.php/documentation">documentation</a></li><li id="item-486"><a href="http://openmicros.org/index.php/component/kunena/?Itemid=0">FORUM</a></li><li id="item-484" class="current active"><a href="http://openmicros.org/index.php/articles">Articles by list</a></li><li id="item-490"><a href="http://openmicros.org/index.php/search">forum search</a></li><li id="item-541"><a href="http://wirelessthings.net/" target="_blank">WirelessThings Shop</a></li></ul>		</div>
+	
+           <div class="clr"></div>
+         </div> 
+            <div id="search" class="gainlayout">
+          		<div class="moduletable">
+					<h3>Search</h3>
+					<form action="http://openmicros.org/index.php/articles" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" type="text" size="20" value="Search..." onblur="if (this.value==&#39;&#39;) this.value=&#39;Search...&#39;;" onfocus="if (this.value==&#39;Search...&#39;) this.value=&#39;&#39;;" data-cip-id="mod-search-searchword">	<input type="hidden" name="task" value="search">
+	<input type="hidden" name="option" value="com_search">
+	<input type="hidden" name="Itemid" value="484">
+	</div>
+</form>
+		</div>
+	 
+		<div class="clr"></div>  
+        </div>
+    <div class="clr"></div>
+</div> 
+
+<div id="wrap" class="gainlayout">
+
+  	  <div id="pathway" class="gainlayout">
+        
+<div class="breadcrumbs">
+<span class="showHere">You are here: </span><a href="http://openmicros.org/" class="pathway">Home</a> <img src="./Uploading firmware - technical documentation_files/arrow.png" alt=""> <a href="http://openmicros.org/index.php/articles" class="pathway">Articles by list</a> <img src="./Uploading firmware - technical documentation_files/arrow.png" alt=""> <a href="http://openmicros.org/index.php/articles/84-xrf-basics" class="pathway">Radio basics (XRF, URF, ERF &amp; SRF)</a> <img src="./Uploading firmware - technical documentation_files/arrow.png" alt=""> <span>Uploading firmware - technical documentation</span></div>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_philosophy_education_paper.html">write my philosophy education paper</a></p>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_philosophy_paper.html">write my philosophy paper</a></p>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_psychology_paper.html">write my psychology paper</a></p>
+
+      <div class="clr"></div>
+	  </div>
+   
+    <div id="cbody" class="gainlayout">
+    <div id="content60" style="width:988px;">    
+
+	    
+      <div id="content" class="gainlayout">
+	  
+      <div class="item-page">
+		<h2>
+								<a href="http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol">
+						Uploading firmware - technical documentation</a>
+						</h2>
+
+
+		<ul class="actions">
+		<li class="print-icon"><a href="http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol?tmpl=component&amp;format=pdf" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" title="PDF" rel="nofollow"><img src="./Uploading firmware - technical documentation_files/pdf_button.png" alt="PDF"></a></li>										<li class="print-icon">
+						<a href="http://openmicros.org/index.php/articles/84-xrf-basics/272-bootloader-protocol?tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" rel="nofollow"><img src="./Uploading firmware - technical documentation_files/printButton.png" alt="Print"></a>				</li>
+				
+								<li class="email-icon">
+						<a href="http://openmicros.org/index.php/component/mailto/?tmpl=component&amp;template=a4joomla-thirty-three&amp;link=8b30fc2e9fe6b18c7344532f64c06c2e96d7790b" title="Email" onclick="window.open(this.href,&#39;win2&#39;,&#39;width=400,height=350,menubar=yes,resizable=yes&#39;); return false;"><img src="./Uploading firmware - technical documentation_files/emailButton.png" alt="Email"></a>				</li>
+												</ul>
+
+	
+	
+
+ <dl class="article-info">
+ <dt class="article-info-term">Details</dt>
+		<dd class="category-name">
+										Category: <a href="http://openmicros.org/index.php/articles/84-xrf-basics">Radio basics (XRF, URF, ERF &amp; SRF)</a>						</dd>
+		<dd class="modified">
+		Last Updated on Monday, 30 November -0001 00:00		</dd>
+	
+ </dl>
+
+	
+	<p><span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">Early versions (prior to a bootloader)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">The device will reset normally at all times. New firmware is loaded into the upper 16k and copied into the lower 16k on a commit.</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">Bootloader 2, 3, 3d</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">If you issue an ATPG to a device the following happens</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">1) XRF, ERF and URF (V0.34 onwards):</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">a. Upon receiving ATPG the device resets</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">i. If nothing else happens then the device starts up normally running any loaded firmware</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">ii. If a ~ character is received on the serial line during the first (about 130mS) then the device enters the bootloader, a reset at this point will restart the device normally.</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">iii. If programming is then started the firmware is erased. At this point if programming is not completed then the device has no firmware and so remains in bootloader mode even after a reset</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">iv. If there is no valid firmware loaded then the device will startup in bootloader mode</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">b. URF will only accept ATPG over the serial port – it will return ERR if received over the USB port.</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">2) URF (V0.33 and prior)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">a. Upon receiving ATPG via the USB port the device invalidates firmware and waits for an upload on the Serial port. A reset here will not alter this and firmware must be uploaded for normal operation to resume.</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">bootloader protocol (-&gt; = tx to XRF, &lt;- = rx from XRF)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">-&gt;~ (within 130mS of reset - enter bootloader mode)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">-&gt;Y (request version)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">&lt;-3 (version 3)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">-&gt;S (request sub version)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">&lt;-d (sub version d)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">-&gt;W (start write mode) (or V for Verify)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">&lt;-W (or V)(acknowledge and erase flash if writing)&nbsp;</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">For each line from the file (xxx.bin)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">&lt;-R (ready for next line)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">-&gt;Send line</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">&lt;-A (meaning line is good)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">For the final line</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">&lt;-R (ready for next line)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">-&gt;send final line</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">&lt;-A (line is good)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">&lt;-R (ready for next line)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">&lt;-y (processed the final line and upload is good)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">Can verify here if needed</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">-&gt;X (exit bootloader) (this is the equivalent to commit)</span><br style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">
+<span style="color: rgb(102, 102, 102); font-family: Geneva, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.234375px;">Device restarts with new firmware</span></p><p>if a N character is received during upload or verify then this signifies an error, you can retry the line - or reset the device and start again.</p><p>If a n character is received then this indicates an unrecoverable error - reset the device and try again.&nbsp;</p> 
+				<ul class="pagenav">
+					<li class="pagenav-prev">
+						<a href="http://openmicros.org/index.php/articles/84-xrf-basics/134-uploading-to-bootloaderv2hex" rel="next">&lt; Prev</a>
+					</li>
+					<li class="pagenav-next">
+						<a href="http://openmicros.org/index.php/articles/84-xrf-basics/209-urf-30-second-introduction" rel="prev">Next &gt;</a>
+					</li>
+				</ul>
+	</div> 
+      </div> 
+          
+  </div>
+      <div class="clr"></div>
+  </div>
+   
+  
+<!--end of wrap-->
+</div>
+    
+<!--end of allwrap-->
+</div>
+<div id="footerwrap" class="gainlayout" style="width:1030px;"> 
+  <div id="footer" class="gainlayout">  
+         </div>
+   
+</div>
+
+
+
+</div></body></html>

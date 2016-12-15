@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0478)http://webcache.googleusercontent.com/search?ion=1&sourceid=chrome-psyapi2&q=cache%3Ahttp%3A%2F%2Fopenmicros.org%2Findex.php%2Farticles%2F79-computer-projects%2F241-python-thermostat-control&oq=cache%3Ahttp%3A%2F%2Fopenmicros.org%2Findex.php%2Farticles%2F79-computer-projects%2F241-python-thermostat-control&ie=UTF-8&aqs=chrome..69i57j69i58.830j0j1&bav=on.2,or.r_cp.&biw=1745&bih=814&dpr=1.1&ech=1&psi=Q63BV42pJInIsQGfkL1A.1472310597884.3&ei=Q63BV42pJInIsQGfkL1A&emsg=NCSR&noj=1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control">--><base href="."><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head><body><div id="google-cache-hdr" dir="ltr"><div>This is Google's cache of <a href="http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control" dir="ltr">http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control</a>. It is a snapshot of the page as it appeared on Aug 19, 2016 07:15:25 GMT. </div><div>The <a href="http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control" dir="ltr">current page</a> could have changed in the meantime. <a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;p=cached&amp;answer=1687222">Learn more</a></div><div></div><div><span style="display:inline-block !important;margin-top:8px !important;margin-right:104px !important;white-space:nowrap !important;"><span style="margin-right:28px !important;"><span style="font-weight:bold !important;">Full version</span></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control&amp;num=1&amp;biw=1745&amp;bih=814&amp;noj=1&amp;strip=1&amp;vwsrc=0">Text-only version</a></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control&amp;num=1&amp;biw=1745&amp;bih=814&amp;noj=1&amp;strip=0&amp;vwsrc=1">View source</a></span></span><span style="display:inline-block !important;margin-top:8px !important;color:#717171 !important;">Tip: To quickly find your search term on this page, press <b>Ctrl+F</b> or <b>⌘-F</b> (Mac) and use the find bar.</span></div></div><div style="position:relative;">
+
+
+
+
+  <!--<base href="http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control">--><base href=".">
+  
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="">
+  <meta name="rights" content="">
+  <meta name="language" content="en-GB">
+  <meta name="title" content="Python thermostat control using XRF with generic IO to sense and switch">
+  <meta name="author" content="Rob">
+  <meta name="generator" content="Joomla! 1.6 - Open Source Content Management">
+  <title>Python thermostat control using XRF with generic IO to sense and switch</title>
+  <script src="./Python thermostat control using XRF with generic IO to sense and switch_files/core.js" type="text/javascript"></script>
+  <script src="./Python thermostat control using XRF with generic IO to sense and switch_files/mootools-core.js" type="text/javascript"></script>
+  <script src="./Python thermostat control using XRF with generic IO to sense and switch_files/caption.js" type="text/javascript"></script>
+  <script src="./Python thermostat control using XRF with generic IO to sense and switch_files/mootools-more.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="./Python thermostat control using XRF with generic IO to sense and switch_files/system.css" type="text/css">
+<link rel="stylesheet" href="./Python thermostat control using XRF with generic IO to sense and switch_files/general.css" type="text/css">
+<link rel="stylesheet" href="./Python thermostat control using XRF with generic IO to sense and switch_files/template.css" type="text/css">
+<link rel="stylesheet" href="./Python thermostat control using XRF with generic IO to sense and switch_files/grey.css" type="text/css">
+<!--[if IE 6]>
+<link rel="stylesheet" href="/templates/a4joomla-thirty-three/css/ie6.css" type="text/css" />
+<script src="/templates/a4joomla-thirty-three/js/suckerfish.js" type="text/javascript"></script>
+<style type="text/css">
+img, div, a, input { behavior: url(/templates/a4joomla-thirty-three/iepngfix.htc) }
+</style>
+<script src="/templates/a4joomla-thirty-three/js/iepngfix_tilebg.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="/templates/a4joomla-thirty-three/css/ie67.css" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="./Python thermostat control using XRF with generic IO to sense and switch_files/mod_stat.php"></script>
+<style type="text/css">
+ #header {
+    height: 80px;
+ }
+ #allwrap {
+    margin-top:0px;
+ }
+ #logo {
+    width:440px;
+    height:80px;
+ }
+ #logo h2 {
+    font-size:52px;
+	margin-top:0px;
+ }
+ #logo h3 {
+	margin-top:-10px;
+ }
+ #banner {
+    height: 80px;
+ }
+ #banner div.moduletable {
+	margin-top:10px;
+ }
+ #headerright {
+    width:530px;
+    height:80px;
+	       background: none;   
+     } 
+ #search {
+   width:170px;
+   height:32px;
+ }
+ 
+</style>
+<!-- <script src="/templates/a4joomla-thirty-three/js/equalize.js" type="text/javascript"></script> -->
+
+
+
+
+
+<div id="allwrap" class="gainlayout" style="width:1030px;">
+
+<div id="headerwrap" class="gainlayout">
+  <div id="header" class="gainlayout">   
+      <div id="logo" class="gainlayout">
+         		    <a href="http://openmicros.org/"><img src="./Python thermostat control using XRF with generic IO to sense and switch_files/openmicroslogo.png" border="0" alt=""></a>
+          
+      </div>
+	  <div id="headerright" class="gainlayout">
+                <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+  </div>	  
+  <div class="clr"></div>
+</div>
+
+<div id="topmenuwrap" class="gainlayout">
+           <div id="topmenu" class="gainlayout">
+           		<div class="moduletable">
+					<h3>Top</h3>
+					
+<ul class="menusfh">
+<li id="item-464"><a href="http://openmicros.org/">Home</a></li><li id="item-540"><a href="http://openmicros.org/index.php/documentation">documentation</a></li><li id="item-486"><a href="http://openmicros.org/index.php/component/kunena/?Itemid=0">FORUM</a></li><li id="item-484" class="current active"><a href="http://openmicros.org/index.php/articles">Articles by list</a></li><li id="item-490"><a href="http://openmicros.org/index.php/search">forum search</a></li><li id="item-541"><a href="http://wirelessthings.net/" target="_blank">WirelessThings Shop</a></li></ul>		</div>
+	
+           <div class="clr"></div>
+         </div> 
+            <div id="search" class="gainlayout">
+          		<div class="moduletable">
+					<h3>Search</h3>
+					<form action="http://openmicros.org/index.php/articles" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" type="text" size="20" value="Search..." onblur="if (this.value==&#39;&#39;) this.value=&#39;Search...&#39;;" onfocus="if (this.value==&#39;Search...&#39;) this.value=&#39;&#39;;" data-cip-id="mod-search-searchword">	<input type="hidden" name="task" value="search">
+	<input type="hidden" name="option" value="com_search">
+	<input type="hidden" name="Itemid" value="484">
+	</div>
+</form>
+		</div>
+	 
+		<div class="clr"></div>  
+        </div>
+    <div class="clr"></div>
+</div> 
+
+<div id="wrap" class="gainlayout">
+
+  	  <div id="pathway" class="gainlayout">
+        
+<div class="breadcrumbs">
+<span class="showHere">You are here: </span><a href="http://openmicros.org/" class="pathway">Home</a> <img src="./Python thermostat control using XRF with generic IO to sense and switch_files/arrow.png" alt=""> <a href="http://openmicros.org/index.php/articles" class="pathway">Articles by list</a> <img src="./Python thermostat control using XRF with generic IO to sense and switch_files/arrow.png" alt=""> <a href="http://openmicros.org/index.php/articles/79-computer-projects" class="pathway">Computer projects</a> <img src="./Python thermostat control using XRF with generic IO to sense and switch_files/arrow.png" alt=""> <span>Python thermostat control using XRF with generic IO to sense and switch</span></div>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_philosophy_education_paper.html">write my philosophy education paper</a></p>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_philosophy_paper.html">write my philosophy paper</a></p>
+<p style="display:none"><a href="http://alevelwriter.com/write_my_psychology_paper.html">write my psychology paper</a></p>
+
+      <div class="clr"></div>
+	  </div>
+   
+    <div id="cbody" class="gainlayout">
+    <div id="content60" style="width:988px;">    
+
+	    
+      <div id="content" class="gainlayout">
+	  
+      <div class="item-page">
+		<h2>
+								<a href="http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control">
+						Python thermostat control using XRF with generic IO to sense and switch</a>
+						</h2>
+
+
+		<ul class="actions">
+		<li class="print-icon"><a href="http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control?tmpl=component&amp;format=pdf" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" title="PDF" rel="nofollow"><img src="./Python thermostat control using XRF with generic IO to sense and switch_files/pdf_button.png" alt="PDF"></a></li>										<li class="print-icon">
+						<a href="http://openmicros.org/index.php/articles/79-computer-projects/241-python-thermostat-control?tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" rel="nofollow"><img src="./Python thermostat control using XRF with generic IO to sense and switch_files/printButton.png" alt="Print"></a>				</li>
+				
+								<li class="email-icon">
+						<a href="http://openmicros.org/index.php/component/mailto/?tmpl=component&amp;template=a4joomla-thirty-three&amp;link=b35bc7c47c1c52341d0432c546ac092892b43bb3" title="Email" onclick="window.open(this.href,&#39;win2&#39;,&#39;width=400,height=350,menubar=yes,resizable=yes&#39;); return false;"><img src="./Python thermostat control using XRF with generic IO to sense and switch_files/emailButton.png" alt="Email"></a>				</li>
+												</ul>
+
+	
+	
+
+ <dl class="article-info">
+ <dt class="article-info-term">Details</dt>
+		<dd class="category-name">
+										Category: <a href="http://openmicros.org/index.php/articles/79-computer-projects">Computer projects</a>						</dd>
+		<dd class="modified">
+		Last Updated on Saturday, 29 December 2012 02:28		</dd>
+	
+ </dl>
+
+	
+	<p>Having built a temperature sensor out of an XRF with the Thermistor firmware, I needed a way to switch a low power heater on and off too. I did not want to add another XRF for the heater control, so I used the Generic IO firmware on the XRF to perform both functions: measure temperature and control the heater.</p><p>For this project I used:</p><ul><li><a href="http://shop.ciseco.co.uk/xbbo-break-out-board-for-xbee-shaped-modules/" target="_blank">XBBO break out board</a></li><li><a href="http://shop.ciseco.co.uk/xrf-wireless-rf-radio-uart-rs232-serial-data-module-xbee-shape-arduino-pic-etc/" target="_blank">XRF</a> with Generic IO firmare</li><li>Thermistor with 10K resitor</li><li><a href="http://shop.ciseco.co.uk/kit-relay-board-simple-to-use-5v-operation-supports-logic-level-also-10amp/" target="_blank">Relay board</a> for powering the heater (it is a very small heater that takes only a few amps)</li></ul><p>Here is a picture of my breadboard system.</p><p><img alt="" src="./Python thermostat control using XRF with generic IO to sense and switch_files/p1010287.jpg" style="width: 400px; height: 300px;"></p><p>The software that interacts with the XRF is on my Linux box and will be moved to the Raspberry Pi soon. Here is what it does:</p><ol><li>first it tries to reach my device by sending the LLAP HELLO message</li><li>if there is no response, it waits for the LLAP STARTED message from the device when it gets powered up</li><li>Once it can communicate with the device, it checks that the device runs the right firmware</li><li>Then we go into the routine of reading the analog ADC value from Analog A (pin 11, where the thermistor bridge is connected) and converting it to degrees C</li><li>It transmits the temperature in a properly formed LLAP message on behalf of the sensor, as it would if it was running Thermistor firmware</li><li>If the temperature is below the threshold, it switches on the heater, the heater goes off on or below the threshold</li></ol><p>In the code below we read the temperature 5 times at 10 second intervals and then terminate. When the system gets deployed, it'll read it less frequently and for longer. But this set up served me well while testing.</p><p>Here is the Python code:</p><pre class="brush:python">#!/usr/bin/env python
+
+import sys
+import serial
+from time import sleep
+from math import log
+
+devid = "RY"                # device id to communicate with
+baud = 9600                 # baud rate
+port = '/dev/ttyACM0'       # serial URF port on this computer
+
+ser = serial.Serial(port, baud)
+ser.timeout = 0
+
+#-----------------
+
+def request(device, request, retry):
+    # sends a message to 'device' with content 'request'
+    # returns 'response' from from device
+    # retries a number of times, pausing longer between retries each time round
+    
+    poll = 1
+    n = 0
+    while (poll == 1 and n &lt; retry):
+        sleep(n)            # sleep longer each time I don't get a response
+        ser.flushInput()    # clear input buffer
+        ser.write('a' + device + request)  # see if our device is online
+        sleep(1)            # delay before picking up response
+        response = getresponse(devid)
+        if len(response) &gt; 1:
+            response = response[3:12]
+            poll = 0
+        n = n + 1
+    return(response)
+
+#---------------
+def getresponse(devid):     # obtain a llap message from devid
+    if ser.inWaiting() &gt;= 12:
+        if ser.read() == 'a':  # llap message start
+                message = 'a'
+                if ser.read(2) == devid:
+                            # response is from the targetted node
+                    message = message + devid + ser.read(9)
+                else:
+                    message = '0'   # not a message from devid
+        else:
+                message = '1'   # not a llap formatted message
+    else:
+        message = '2'
+    return(message)
+
+#----------------
+
+def getstarted(devid):      # wait for the STARTED message from devid
+    t = 1
+    while t == 1 :
+        if ser.inWaiting() &gt;=12:
+            if ser.read() == 'a':   # llap message start
+                message = 'a'
+                if ser.read(2) == devid:    # message is from our device
+                    if ser.read(9) == 'STARTED--':  # devid has started
+                        t = 0
+        ser.flushInput()
+        sleep(1)
+    return()
+
+#----------------
+def Thermistor(ANA):        # calculate the temperature from an ADC value
+    beta = 3977             # beta value for the thermistor
+    Rtemp = 25.0 + 273.15   # reference temperature (25C)
+    Rresi = 10150           # reference resistance at reference temperature - adjust to calibrate
+    Rtherm = (2048.0/ANA - 1)*10000  # value of the resistance of the thermistor
+    T = Rtemp * beta / (beta + Rtemp * (log(Rtherm/Rresi)))
+    T = T - 273.15          # convert from Kelvin to Celsius
+    return(T)
+
+#-----------------
+
+
+def thermostat(tempd):
+    # Thermostatic control program using Generic IO firmware on the XRF
+    #
+    # Attempt to communicate with our device
+    # first send a HELLO request to see if the device is online.
+    # if there is no suitable response, sit and wait for a STARTED message
+    # once there is a response, ensure it is a device that supports Generic IO
+    # then read the thermistor raw ADC value, convert it to Celcius
+    # send LLAP message on behalf of the generic IO sensor (as if it was the temp sensor)
+    # proceed to act as a thermostat and heater control
+
+    reportfreq = 10     # seconds between readings from device
+    
+    # seek a connection with the device
+    response = request(devid,'HELLO----',1)
+    if response[0:5] != 'HELLO':
+        getstarted(devid)       # wait for device to announce itself with STARTED message
+
+    # check the firmware is Generic IO
+    response = request(devid, 'DEVTYPE--',1)
+    if response[0:3] != 'GEN':  # we are not dealing with a generic device
+        print 'INVALID DEVICE'
+        exit()
+
+    # read the raw ADC value at Analog A and convert to temperature
+    # do this every reportfreq seconds
+    # finish after p readings for now
+    p = 5
+    n = 0
+    heater = 0
+    request(devid, 'OUTA0----',1)   # ensure heating is off
+    while n &lt; p: 
+        response = request(devid,'ANAA-----',1)
+        if response[0:4] == 'ANAA':
+            ANA = float(response[-4:])
+            TempA = Thermistor(ANA)   # convert ADC value to temperature
+            if (TempA &gt;= tempd and heater == 1):
+                request(devid, 'OUTA0----',1)   # turn heating off
+                heater = 0
+            if (TempA &lt; tempd and heater == 0):
+                request(devid, 'OUTA1----',1)   # turn heating on
+                heater = 1
+            print '%.2f' %TempA + ' degrees C'
+            # and maybe send the proper llap message on behalf of the node
+            ser.write('a' + devid + 'TMPA' + '%.2f' %TempA)
+        else:   # there was an error in the message
+            print 'no or invalid response to ANAA'
+        sleep(reportfreq)
+        n = n + 1
+    request(devid, 'OUTA0----',1)   # ensure heating is off when exiting
+    heater = 0
+    print 'END'
+
+#thermostat(21.0)    # run the program from the Python shell
+
+# This program is run from the command line like this: &gt; python thermostat.py 21.5
+# If you want to run this program from the Python shell, uncomment the previous line
+# and comment out the lines below to the end of the file
+
+if __name__ == "__main__":   # run the program from the command line
+   import sys
+   thermostat(float(sys.argv[1]))
+
+</pre><p>For me this was a nice little project. Hope others can use some of it, or improve upon it!</p><p>&nbsp;</p><p>&nbsp;</p> 
+				<ul class="pagenav">
+					<li class="pagenav-prev">
+						<a href="http://openmicros.org/index.php/articles/79-computer-projects/265-processing-and-llap" rel="next">&lt; Prev</a>
+					</li>
+					<li class="pagenav-next">
+						<a href="http://openmicros.org/index.php/articles/79-computer-projects/287-setting-up-pc-to-work-with-ciseco-hardware" rel="prev">Next &gt;</a>
+					</li>
+				</ul>
+	</div> 
+      </div> 
+          
+  </div>
+      <div class="clr"></div>
+  </div>
+   
+  
+<!--end of wrap-->
+</div>
+    
+<!--end of allwrap-->
+</div>
+<div id="footerwrap" class="gainlayout" style="width:1030px;"> 
+  <div id="footer" class="gainlayout">  
+         </div>
+   
+</div>
+
+
+
+</div></body></html>
